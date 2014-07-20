@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3
 {
-    class Worker : Person, IWorker, IComparable
+    class Worker : Person, IWorker, IComparable<Worker>
     {
         public float baseSalary { get; set; }
         public string work { get; set; }
