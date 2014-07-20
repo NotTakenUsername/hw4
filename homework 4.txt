@@ -1,0 +1,24 @@
+Homework 4
+1. Practical task:
+A) Create Console Application project Collection Of Workers in VS. 
+   Add classes (Person, Worker) from the previous homework to the new project. 
+
+     Update class Worker: 
+     a) insert string field Profile (QC, Dev, PM, etc) 
+
+     Create a class Job Distributor with next functionality: 
+     a) create any suitable collection of Worker 
+     b) read for it content from XML file 
+     c) create dictionary with keys "QC", "Dev", "PM", etc
+     d) distributed workers to dictionary
+
+     Be ready to process potential exceptions: 
+     a) incorrect XML structure
+     b) empty Workers collection 
+     c) unexpected job profile
+
+2. Learn next C# topics:	
+     a) DB Fundamentals
+     b) SQL
+
+Homework should be completed till the next end of Tuesday (07/22/2014)

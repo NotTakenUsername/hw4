@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Worker>
+  <Name>Orc</Name>
+  <birthDate>
+    <month>01</month>
+    <day>11</day>
+    <year>1974</year>
+  </birthDate>
+  <baseSalary>124</baseSalary>
+  <work>dosomething</work>
+  <Profile>Dev</Profile>
+  
+</Worker>
