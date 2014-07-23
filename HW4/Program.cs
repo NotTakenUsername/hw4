@@ -16,7 +16,7 @@ namespace HW4
         {
             List<Worker> Workers = new List<Worker>();
             bool AddWorker = true;            
-           // Worker WorkerToAdd = new Worker();
+           
             while (AddWorker)
             {
 
@@ -29,7 +29,7 @@ namespace HW4
                 baseSalary = GetData.Salary();
                 profile = GetData.Profile();
                 Worker CreateNew = new Worker(name,birthDate,baseSalary, profile);
-               // Profiles.Add(CreateNew.Name, CreateNew.Profile(GetData.Profile()));
+               
                 Workers.Add(CreateNew);         
                           
                 //quit or continue option
@@ -37,13 +37,14 @@ namespace HW4
                 ConsoleKeyInfo choise = Console.ReadKey();
                 AddWorker = Decision.AddOrQuit(AddWorker, choise);
             }
+
             //operations with dictionary
             Dictionary<string, List<Worker>> SortByProfiles = new Dictionary<string, List<Worker>>();
             foreach ( Worker w in Workers )
             {                 
-                SortByProfiles.Add("QC", Workers.Where( wt => wt.Profile == "QC").ToList());
-                SortByProfiles.Add("Dev", Workers.Where(wt => wt.Profile == "Dev").ToList());
-                SortByProfiles.Add("PM", Workers.Where(wt => wt.Profile == "PM").ToList());
+                SortByProfiles.Add("QC", Workers.Where( temp => temp.Profile == "QC").ToList());
+                SortByProfiles.Add("Dev", Workers.Where(temp => temp.Profile == "Dev").ToList());
+                SortByProfiles.Add("PM", Workers.Where(temp => temp.Profile == "PM").ToList());
             }
             
 
@@ -57,7 +58,11 @@ namespace HW4
             xmlFile.Save(Workers);
             //try to load existing file
             xmlFile.Load();
-                                
+               JobDistributor NewWorkers = new JobDistributor();
+               NewWorkers.AddWorkers();
+               NewWorkers.SortedDictionary();
+               NewWorkers.SaveToXML();
+               NewWorkers.LoadXML();
 
         }                    
   
