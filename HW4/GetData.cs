@@ -68,6 +68,22 @@ namespace HW4
             }
             return salary;
         }    
-
+       
+        //filepath
+        static public string filePath()
+        {
+            bool isEntered = false;
+            string filePath ="";
+            while (!isEntered)
+            {
+                Console.WriteLine("Specify filepath: ");
+                filePath = Console.ReadLine();
+                if (filePath.Length > 0)
+                {
+                    isEntered = false;
+                }
+            }
+            return filePath;
+        }
     }
 }

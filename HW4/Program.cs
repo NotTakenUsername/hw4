@@ -41,17 +41,19 @@ namespace HW4
             Dictionary<string, List<Worker>> SortByProfiles = new Dictionary<string, List<Worker>>();
             foreach ( Worker w in Workers )
             {                 
-                SortByProfiles.Add(w.Profile, Workers.Where() );
+                SortByProfiles.Add("QC", Workers.Where( wt => wt.Profile == "QC").ToList());
+                SortByProfiles.Add("Dev", Workers.Where(wt => wt.Profile == "Dev").ToList());
+                SortByProfiles.Add("PM", Workers.Where(wt => wt.Profile == "PM").ToList());
             }
             
 
-            //try to create file
-            string filePath;
+            //try to create file            
             Console.WriteLine("*** Saving data to XML ***");
-            Console.WriteLine("Specify filepath: ");
-            filePath = Console.ReadLine();
-            
+            string filePath = GetData.filePath();
+                 // serialization      
             xmlProcessing<List<Worker>> xmlFile = new xmlProcessing<List<Worker>>(filePath);
+            //add trycatch for save and load
+            //try to save           
             xmlFile.Save(Workers);
             //try to load existing file
             xmlFile.Load();
