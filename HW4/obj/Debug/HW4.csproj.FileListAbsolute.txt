@@ -1,0 +1,12 @@
+D:\AT QC\hw4\HW4\HW4\bin\Debug\HW4.exe.config
+D:\AT QC\hw4\HW4\HW4\obj\Debug\HW4.csprojResolveAssemblyReference.cache
+D:\AT QC\hw4\HW4\HW4\bin\Debug\HW4.exe
+D:\AT QC\hw4\HW4\HW4\bin\Debug\HW4.pdb
+D:\AT QC\hw4\HW4\HW4\obj\Debug\HW4.exe
+D:\AT QC\hw4\HW4\HW4\obj\Debug\HW4.pdb
+D:\AT QC\hw4\HW4\bin\Debug\HW4.exe.config
+D:\AT QC\hw4\HW4\obj\Debug\HW4.exe
+D:\AT QC\hw4\HW4\obj\Debug\HW4.pdb
+D:\AT QC\hw4\HW4\bin\Debug\HW4.exe
+D:\AT QC\hw4\HW4\bin\Debug\HW4.pdb
+D:\AT QC\hw4\HW4\obj\Debug\HW4.csprojResolveAssemblyReference.cache

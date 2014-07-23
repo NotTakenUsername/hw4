@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfWorker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Worker>
+    <Name>erw</Name>
+    <birthDate>1999-12-12T00:00:00</birthDate>
+    <baseSalary>111</baseSalary>
+    <work>play tekken with buddy</work>
+  </Worker>
+</ArrayOfWorker>
