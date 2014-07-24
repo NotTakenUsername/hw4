@@ -39,13 +39,14 @@ namespace HW4
       }
       public void SortedDictionary()
       {         
-          foreach (Worker w in Workers)
-          {
+          //foreach (Worker w in Workers) //why argument exception is thrown? 
+        //  {
               SortByProfiles.Add("QC", Workers.Where(temp => temp.Profile == "QC").ToList());
               SortByProfiles.Add("Dev", Workers.Where(temp => temp.Profile == "Dev").ToList());
               SortByProfiles.Add("PM", Workers.Where(temp => temp.Profile == "PM").ToList());
-          }
+        //  }
       }
+
       public void SaveToXML()
       {
           Console.WriteLine("*** Saving data to XML ***");
@@ -55,6 +56,7 @@ namespace HW4
           //add trycatch for save and load
           //try to save           
           xmlFile.Save(Workers);
+          
           
       }
 

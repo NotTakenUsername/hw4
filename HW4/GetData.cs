@@ -80,7 +80,7 @@ namespace HW4
                 filePath = Console.ReadLine();
                 if (filePath.Length > 0)
                 {
-                    isEntered = false;
+                    isEntered = true;
                 }
             }
             return filePath;
